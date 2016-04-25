@@ -1,28 +1,22 @@
-== README
+Rock Da Pasta
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A convenient companion app to the establishment's existing POS system, the Rock Da Pasta
+order system allows both new and seasoned servers alike to assign guests to
+tables and gather their orders, ensuring speed and accuracy.
 
-Things you may want to cover:
+After assigning a party their table number, the server will then be able to use
+the menu drop down option to select the items the table requires and to assess
+their payment status.
 
-* Ruby version
+Further versions will include better and responsive design, the ability to
+take drink orders, and to virtually send the ticket to the chef to save time
+walking across the floor.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The four tables included in this present version allow for a simplistic order system
+suited for new restaurants looking to season their servers. The final upgraded
+version should make use of the Square to take payments directly from the patrons
+at their tables and for their show page of the parties to be updated virtually
+by a hostess with admin privileges.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+ERD: https://drive.google.com/file/d/0BxLIF2dnSTGYT2plN19BZk1vNUJLQW1fT3ZQOUltNEtVSVc4/view?usp=sharing
