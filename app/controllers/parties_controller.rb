@@ -32,9 +32,9 @@ class PartiesController < ApplicationController
 
   def destroy
     party = Party.find params[:id]
-
-
   end
+
+  
 
   private
 
