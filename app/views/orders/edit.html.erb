@@ -1,0 +1,13 @@
+<h1> Edit Order </h1>
+
+
+<%= form_for @order do |f| %>
+  <%= f.hidden_field "user_id", :value => @user.id %>
+  <%= f.hidden_field "party_id", :value => @party.id %>
+
+  <span class="form"><%= f.label :food %></span>
+  <%= f.collection_select :food_id, Food.all :id, :name, :class: "custom-dropdown" %>
+
+  <%= f.submit class: "button" %>
+
+<% end %>

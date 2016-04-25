@@ -1,0 +1,20 @@
+<div class="index-food">
+<h3> Welcome Back, <%= @user.username %></h3>
+</div>
+
+<h1>Rock Da Pasta Menu Selection</h1>
+
+<% @food.each do |food| %>
+  <h2><%= food.name %></h2>
+
+  <p><%= food.description %>
+    <%= food.price %></p>
+
+<br>
+<br>
+
+<%= link_to "Remove Item", foods_path(food.id), method: :delete %>
+<%= link_to "Edit Item", edit_food_path(food.id) %>
+<%= link_to "Add Item", new_food_path %>
+
+<% end %>

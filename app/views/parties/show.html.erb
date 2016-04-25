@@ -1,0 +1,27 @@
+
+
+<div class="show-party-page">
+
+  <span class="show-table"> Table Number: </span> <span class= "show-party-info"><%= @party.table_number %></span>
+
+</div>
+
+<h1> Add to Order </h1>
+
+<%= form_for @order do |f| %>
+<%= f.hidden_field :user_id, :value => current_user.id %>
+<%= f.hidden_field "party_id", :value => @party.id %>
+
+<span class="food-form"><%= f.label :food %></span>
+  <%= f.collection_select :food_id, Food.all, :id, :name, class:"custom-dropdown" %>
+
+<%= f.submit class: "button" %>
+
+<% end %>
+
+<nav>
+    <ul>
+      <li><%= link_to "Back To Home", :root %></li>
+      <li><%= button_to "Log Out", '/sessions', method: :delete %></li>
+    </ul>
+</nav>

@@ -1,0 +1,15 @@
+
+
+
+<h1>Edit Party</h1>
+
+<%= form_for @party do |f| %>
+  <%= f.hidden_field :user_id, :value => current_user.id %>
+  <span class="table-form"><%= f.label :table_number %></span>
+  <span class="table-selection"><%= f.select( :table_name_prefix, options_for_select([['1','1'],['2','2'],['3','3'],
+  ['4','4'],['5','5'],['6','6'],['7','7'],['8','8']] ) ) %></span>
+
+
+<%= f.submit class: "button" %>
+
+<% end %>

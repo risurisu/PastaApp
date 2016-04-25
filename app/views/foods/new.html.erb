@@ -1,0 +1,25 @@
+<div class="new-food">
+<h3> Welcome Back, <%= @user.username %></h3>
+</div>
+
+<h1>Add Item</h1>
+
+<%= form_for @food do |f| %>
+  <span class="form"><%= f.label :name %></span>
+  <%= f.text_field :name, class: 'text-box' %>
+
+<br>
+
+  <span class="form"><%= f.label :description %></span>
+  <%= f.text_field :description, class: 'text-box' %>
+
+<br>
+
+  <span class="form"><%= f.label :price %></span>
+  <%= f.number_field :price, class: 'text-box' %>
+
+<br>
+
+<%= submit_tag "Add Item", class: "button" %>
+
+<% end %>

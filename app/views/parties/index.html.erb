@@ -1,0 +1,21 @@
+
+
+ <h1>Parties</h1>
+
+ <% @parties.each do |party| %>
+
+ <h4> Table Number: <span class="party-stats"><%= party.table_name_prefix %> </h4></span>
+
+ <h4> Food Order: <span class="party-stats"><% party.foods.each do |food| %>
+    <%= render partial: "foods/food", locals: {foods: food} %>
+      <% end %> </h4> </span>
+
+
+
+ <br>
+
+ <%= link_to "Paid", party_path(party.id), method: :delete %>
+ <%= link_to "Edit Party", edit_party_path(party.id) %>
+ <%= link_to "Add to Order", party_path(party.id) %>
+
+ <% end %>
