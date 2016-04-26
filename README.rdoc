@@ -20,3 +20,4 @@ by a hostess with admin privileges.
 
 
 ERD: https://drive.google.com/file/d/0BxLIF2dnSTGYT2plN19BZk1vNUJLQW1fT3ZQOUltNEtVSVc4/view?usp=sharing
+Heroku: https://afternoon-escarpment-84817.herokuapp.com/
